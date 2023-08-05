@@ -58,14 +58,15 @@ function main() {
   }, 1000);
 
   function sjekkIfCT() {
+    
     //If win
     if (
       document.getElementsByClassName("previous-rolls-item")[19].children[0]
-        .className == "inline-block w-24 h-24 rounded-full ml-1 coin-ct"
+        .className == "coin-ct ml-1 inline-block h-24 w-24 rounded-full"
     ) {
       console.log("Ez cash");
       //TODO DENNE FUNKER; MEN TRYKKER BARE EN GANG PÅ 0.01 (Bare Å LEGGE TIL EN FOR-LØKKE)
-      currentBet = document.getElementById("setCurrentBet").value;
+      0.01 = document.getElementById("setCurrentBet").value;
 
       for (i = 0; i < currentBet * 100; i++) {
         document.getElementsByClassName("bet-input__control")[1].click(); //Trykker en en gang pr 0.01 currentBet
